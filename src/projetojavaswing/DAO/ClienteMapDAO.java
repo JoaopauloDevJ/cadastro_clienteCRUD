@@ -2,9 +2,9 @@
  * @author João Paulo
  */
 
-package br.com.paulo.DAO;
+package projetojavaswing.DAO;
 
-import br.com.paulo.domain.Cliente;
+import projetojavaswing.domain.Cliente;
 
 import java.util.Collection;
 import java.util.HashMap;

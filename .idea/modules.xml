@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/cadastroCliente-CRUD.iml" filepath="$PROJECT_DIR$/cadastroCliente-CRUD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProjetoJavaSwing.iml" filepath="$PROJECT_DIR$/ProjetoJavaSwing.iml" />
     </modules>
   </component>
 </project>

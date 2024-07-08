@@ -2,7 +2,7 @@
  * @author João Paulo
  */
 
-package br.com.paulo.domain;
+package projetojavaswing.domain;
 
 import java.util.Objects;
 
@@ -11,7 +11,7 @@ public class Cliente {
     private Long cpf;
     private Long tel;
     private String endereco;
-    private Integer numero;
+    private String numero;
     private String cidade;
     private String estado;
 
@@ -19,10 +19,10 @@ public class Cliente {
         this.nome = nome;
         this.cpf = Long.valueOf(cpf.trim());
         this.tel = Long.valueOf(tel.trim());
-        this.endereco = endereco;
-        this.numero = Integer.valueOf(numero.trim());
-        this. cidade = cidade;
+        this.cidade = cidade;
         this.estado = estado;
+        this.endereco = endereco;
+        this.numero = numero;
     }
 
     public String getNome() {
@@ -57,11 +57,11 @@ public class Cliente {
         this.endereco = endereco;
     }
 
-    public Integer getNumero() {
+    public String getNumero() {
         return numero;
     }
 
-    public void setNumero(Integer numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 
@@ -86,6 +86,7 @@ public class Cliente {
         return Objects.hash(cpf);
     }
 
+    @Override
     public boolean equals(Object objeto) {
         if(this == objeto) return true;
         if(objeto == null) return false;
@@ -97,11 +98,11 @@ public class Cliente {
         return objeto.equals(cpf);
     }
 
-    @Override
+   @Override
     public String toString() {
-        return "Pessoa = { " +
-                "Nome: " + nome + '\'' +
-                "CPF: " + cpf + '\'' +
+        return " Pessoa = { " +
+                " Nome: '" + nome + '\'' +
+                " | CPF: '" + cpf + '\'' +
                 '}';
     }
 }
